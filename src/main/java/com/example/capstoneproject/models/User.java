@@ -6,8 +6,10 @@ import com.sun.istack.NotNull;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="users")
 public class User extends AbstractEntity{
 
     @NotNull
