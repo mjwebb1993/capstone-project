@@ -119,7 +119,7 @@ public class AuthenticationController {
 
         setUserInSession(request.getSession(), theUser);
 
-        return "redirect:/users/home";
+        return "redirect:";
     }
     // Handle Logging Out
     @GetMapping("/logout")
