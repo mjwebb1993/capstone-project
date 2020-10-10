@@ -15,10 +15,10 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("files")
+    @GetMapping("DBFile")
     public String displayUserFiles(Model model) {
 
-        return "users/files";
+        return "users/DBFile";
     }
 
     @GetMapping("home")

@@ -14,10 +14,16 @@ public class IndexController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping(value="")
-    public String displayIndex(Model model){
+//    @GetMapping(value="")
+//    public String displayIndex(Model model){
+//        model.addAttribute("users", userRepository.findAll());
+//        return "index";
+//    }
+
+    @GetMapping(value="index")
+    public String displayAppHome(Model model){
         model.addAttribute("users", userRepository.findAll());
-        return "index";
+        return "";
     }
 
     @GetMapping(value="chat")
