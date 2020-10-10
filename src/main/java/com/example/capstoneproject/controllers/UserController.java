@@ -15,6 +15,12 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+    @GetMapping("fileindex")
+    public String displayFileIndex(Model model) {
+
+        return "users/fileindex";
+    }
+
     @GetMapping("DBFile")
     public String displayUserFiles(Model model) {
 
